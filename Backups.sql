@@ -10,11 +10,23 @@ Enter password: ****
 
 
 
-/* MySQL Database Restore*/
-C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump -u root -p demo_restore < C:\Users\dnyan\dnyana\MySQLBackup\demo.sql
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump -u root -p lmsdatabase > C:\Users\dnyan\dnyana\MySQLBackup\lmsdatabase_backup.sql
 Enter password: ****
 
 
 
-C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump -u root -p cpulogdata_copy < C:\Users\dnyan\dnyana\MySQLBackup\cpulogdata_backup.sql
+
+/* MySQL Database Restore*/
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql -u root -p demo_restore < C:\Users\dnyan\dnyana\MySQLBackup\demo.sql
+Enter password: ****
+
+
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql -u root -p cpulogdata_copy < C:\Users\dnyan\dnyana\MySQLBackup\cpulogdata_backup.sql
+Enter password: ****
+
+
+
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql -u root -p lmsdatabase_copy < C:\Users\dnyan\dnyana\MySQLBackup\lmsdatabase_backup.sql
 Enter password: ****
